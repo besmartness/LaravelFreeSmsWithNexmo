@@ -14,7 +14,7 @@
 
 ## THEN PASTE THIS ROUTE CODE
 ## IN YOUR ROUTES/WEB.PHP :	
-    Route::get('/sms/send/{receiver}', function(\Nexmo\Client $nexmo, $receiver){
+                    Route::get('/sms/send/{receiver}', function(\Nexmo\Client $nexmo, $receiver){
     					$message = $nexmo->message()->send([
        					 	'title' => 'YOUR COMPANY NAME',
         					'to' => $receiver,
@@ -23,6 +23,6 @@
         					'text' => 'Free 30 sms around the world By Nexmo'
     						]);
     					Log::info('sent message: ' . $message['message-id']);
-				});
+				    });
 				
 NOW YOUR APP IS READY FOR USING ! 
