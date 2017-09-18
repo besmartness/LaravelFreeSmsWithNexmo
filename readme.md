@@ -1,18 +1,20 @@
-FOR USING THIS APP YOU HAVE TO GET 'NEXMO_KEY' AND 'NEXMO_SECRET' FROM NEXMO.COM
+## FOR USING THIS APP YOU HAVE TO GET 'NEXMO_KEY' AND 'NEXMO_SECRET' FROM NEXMO.COM
 
-THEN PASTE THEY IN .ENV FILE: 
+## THEN PASTE THEY IN .ENV FILE: 
 
-NEXMO_KEY=YOUR_NEXMO_KEY
-NEXMO_SECRET=YOUR_NEXMO_SECRET
+ NEXMO_KEY=YOUR_NEXMO_KEY
+ NEXMO_SECRET=YOUR_NEXMO_SECRET
 
-THEN DOWNLOAD VIA COMPOSER :
+## THEN DOWNLOAD VIA COMPOSER :
 				"nexmo/laravel": "dev-master as 1.0",
         			"nexmo/client": "dev-master as 1.0"
 
-THEN RUN FOLLOWING COMMAND : 	PHP ARTISAN VENDOR:PUBLISH
+## THEN RUN FOLLOWING COMMAND :
+ 	PHP ARTISAN VENDOR:PUBLISH
 
-THEN PASTE THIS ROUTE CODE
-IN YOUR ROUTES/WEB.PHP :	Route::get('/sms/send/{receiver}', function(\Nexmo\Client $nexmo, $receiver){
+## THEN PASTE THIS ROUTE CODE
+## IN YOUR ROUTES/WEB.PHP :	
+    Route::get('/sms/send/{receiver}', function(\Nexmo\Client $nexmo, $receiver){
     					$message = $nexmo->message()->send([
        					 	'title' => 'YOUR COMPANY NAME',
         					'to' => $receiver,
