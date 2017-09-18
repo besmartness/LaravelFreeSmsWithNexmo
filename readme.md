@@ -25,7 +25,9 @@
     					Log::info('sent message: ' . $message['message-id']);
 				    });
 				
-## NOW YOUR APP IS READY FOR USING ! 
+## NOW YOUR APP IS READY FOR USING. YOU ARE FREE TO SEND 30 SMS AROUND THE WORLD!
+## PRICE LIST BELOW 
+ https://www.nexmo.com/pricing
 ## FOR MORE INFORMATION ABOUT NEXMO API VISIT OFFICIAL SITE : 
 
 https://developer.nexmo.com/api/sms
