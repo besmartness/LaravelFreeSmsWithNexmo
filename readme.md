@@ -25,4 +25,7 @@
     					Log::info('sent message: ' . $message['message-id']);
 				    });
 				
-NOW YOUR APP IS READY FOR USING ! 
+## NOW YOUR APP IS READY FOR USING ! 
+## FOR MORE INFORMATION ABOUT NEXMO API VISIT OFFICIAL SITE : 
+
+https://developer.nexmo.com/api/sms
